@@ -9,9 +9,9 @@ const Footer = () => {
           <div className="col-md-4">
             <p className="my-font text-light mb-5">ESHOP</p>
             <p className="fw-bold">Social Media</p>
-            <i class="bi bi-facebook fs-4"></i>
-            <i class="bi bi-twitter-x fs-4 mx-4"></i>
-            <i class="bi bi-instagram fs-4"></i>
+            <i className="bi bi-facebook fs-4"></i>
+            <i className="bi bi-twitter-x fs-4 mx-4"></i>
+            <i className="bi bi-instagram fs-4"></i>
           </div>
           <div className="col-md-4">
             <div className="row">
@@ -33,14 +33,14 @@ const Footer = () => {
           </div>
           <div className="col-md-4">
             <p className="fw-bold">STAY UP TO DATE</p>
-            <div class="input-group mb-3">
+            <div className="input-group mb-3">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 placeholder="Enter email"
               />
               <button
-                class="btn btn-outline-success text-light"
+                className="btn btn-outline-success text-light"
                 type="submit"
               >
                 SUBMIT
