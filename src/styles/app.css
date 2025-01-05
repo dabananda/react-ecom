@@ -1,0 +1,19 @@
+.custom-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  color: #767575;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.my-font {
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: #224F34;
+}

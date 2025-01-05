@@ -1,0 +1,22 @@
+.hero {
+  background-color: #C2EFD4;
+  height: calc(100vh - 56px);
+}
+
+.hero-text {
+  font-family: "Rufina", serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #224F34;
+}
+
+.hero-text-minor {
+  font-family: "Poppins", serif;
+  font-size: 24px;
+  font-weight: medium;
+  color: #267D49;
+}
+
+.hero-img {
+  width: 70%;
+}

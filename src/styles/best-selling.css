@@ -1,0 +1,28 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.product-card {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.product-image {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  color: #28a745;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

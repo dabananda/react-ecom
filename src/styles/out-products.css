@@ -1,0 +1,33 @@
+.product-item {
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  cursor: pointer;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #373737;
+  transition: color 0.3s ease;
+}
+
+.product-item:hover .product-title {
+  color: #1b3a28;
+}
+
+.product-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.product-item:hover .product-price {
+  color: #333; /* Slightly darker gray on hover */
+}
