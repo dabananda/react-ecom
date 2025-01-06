@@ -1,27 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useProducts } from "../context/ProductContext";
 import "../styles/out-products.css";
 
 const OurProducts = () => {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await fetch(
-          "https://api.escuelajs.co/api/v1/products?offset=8&limit=8"
-        );
-        const data = await response.json();
-        setProducts(data);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching products:", error);
-        setLoading(false);
-      }
-    };
-
-    fetchProducts();
-  }, []);
+  const { ourProducts, loading } = useProducts();
 
   return (
     <div className="container my-5">
@@ -31,7 +13,7 @@ const OurProducts = () => {
         <div>Loading...</div>
       ) : (
         <div className="row">
-          {products.map((product) => (
+          {ourProducts.map((product) => (
             <div key={product.id} className="col-md-3 mt-4">
               <div className="product-item">
                 <img
@@ -39,7 +21,9 @@ const OurProducts = () => {
                   alt={product.title}
                   className="img-fluid"
                 />
-                <h5 className="product-title mt-3 text-center">{product.title}</h5>
+                <h5 className="product-title mt-3 text-center">
+                  {product.title}
+                </h5>
                 <p className="product-price text-center">${product.price}</p>
               </div>
             </div>
